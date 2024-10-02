@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "decoychests",
+	"version": "${version}",
+	"name": "Decoy Chests",
+	"description": "Mod Adding Craftable Decoy Chests",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "-",
+		"sources": "https://github.com/MashMake"
+	},
+	"license": "MIT",
+	"icon": "assets/decoychests/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mashmake.decoychests.DecoyChests"
+		],
+		"fabric-datagen": [
+			"net.mashmake.decoychests.DecoyChestsDataGenerator"
+		],
+		"client": [
+			"net.mashmake.decoychests.DecoyChestsClient"
+		]
+	},
+	"mixins": [
+		"decoychests.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
